@@ -1,0 +1,71 @@
+@layer components {
+    .notification {
+        @apply fixed top-0 right-0 z-50 flex flex-col justify-end mr-2 space-y-2;
+    }
+
+    .notification .widget {
+        @apply relative w-80 max-w-xs  border-2 rounded-md shadow;
+    }
+
+    .notification .notice-button .close-icon {
+        @apply w-3.5 h-3.5;
+    }
+
+    .notification .notice-button {
+        @apply absolute top-1.5 right-1.5 h-4 w-4 focus:outline-none;
+    }
+
+    /** alert */
+    .notification .notice-alert {
+        @apply bg-[#fbeaf0] border-[#ec4899] bg-opacity-95;
+    }
+
+    .notification .notice-alert .title,
+    .notification .notice-alert .icon {
+        @apply text-[#d94274];
+    }
+
+    .notification .notice-alert .description {
+        @apply text-[#a6526e];
+    }
+
+    .notification .notice-alert .notice-button {
+        @apply text-[#ec4899] hover:text-[#d94274];
+    }
+
+    /** info */
+    .notification .notice-info {
+        @apply bg-[#fbeaf0] border-[#ec4899] bg-opacity-95;
+    }
+
+    .notification .notice-info .title,
+    .notification .notice-info .icon {
+        @apply text-[#597e99];
+    }
+
+    .notification .notice-info .description {
+        @apply text-[#1e5680];
+    }
+
+    .notification .notice-info .notice-button {
+        @apply text-[#9cbedf] hover:text-[#597e99];
+    }
+
+    /** success */
+    .notification .notice-success {
+        @apply bg-[#fbeaf0] border-[#ec4899] bg-opacity-95;
+    }
+
+    .notification .notice-success .title,
+    .notification .notice-success .icon {
+        @apply text-[#4e846b];
+    }
+
+    .notification .notice-success .description {
+        @apply text-[#4d7158];
+    }
+
+    .notification .notice-success .notice-button {
+        @apply text-[#6ba28e] hover:text-[#4e846b];
+    }
+}

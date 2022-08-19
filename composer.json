@@ -1,0 +1,57 @@
+{
+    "name": "f1uder/laravel-notification",
+    "description": "Laravel Livewire Notification (+ AlpineJS)",
+    "keywords": [
+        "laravel",
+        "notification",
+        "livewire"
+    ],
+    "homepage": "https://github.com/f1uder/laravel-notification",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Fluder",
+            "email": "f1uder@yandex.ru",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0|^8.1",
+        "laravel/framework": "^8.0|^9.0",
+        "livewire/livewire": "^2.3|^v2.10",
+        "illuminate/support": "^8.0|^9.0",
+        "illuminate/http": "^8.0|^9.0",
+        "illuminate/contracts": "^8.0|^9.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Nrox\\LaravelNotification\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+
+        }
+    },
+    "scripts": {
+        "format": "vendor/bin/pint"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Nrox\\LaravelNotification\\LaravelNotificationServiceProvider"
+            ],
+            "aliases": {
+                "LaravelNotification": "Nrox\\LaravelNotification\\Facades\\LaravelNotification"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

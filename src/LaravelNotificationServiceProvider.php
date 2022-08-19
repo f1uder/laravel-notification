@@ -3,13 +3,13 @@
 namespace Nrox\LaravelNotification;
 
 use Closure;
-use Nrox\LaravelNotification\Http\Livewire\Notification;
-use Livewire\Livewire;
-use Livewire\Redirector;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Session;
-use Livewire\Component;
 use Illuminate\Support\ServiceProvider;
+use Livewire\Component;
+use Livewire\Livewire;
+use Livewire\Redirector;
+use Nrox\LaravelNotification\Http\Livewire\Notification;
 
 class LaravelNotificationServiceProvider extends ServiceProvider
 {
@@ -31,9 +31,9 @@ class LaravelNotificationServiceProvider extends ServiceProvider
                 'timer' => $timer ?? config('notification.timer'),
             ];
 
-            if (isset($title)):
+            if (isset($title)) {
                 $notice['title'] = $title;
-            endif;
+            }
 
             $this->dispatchBrowserEvent('notice', $notice);
         });
@@ -76,9 +76,9 @@ class LaravelNotificationServiceProvider extends ServiceProvider
                 'timer' => $timer ?? config('notification.timer'),
             ];
 
-            if (isset($title)):
+            if (isset($title)) {
                 $notice['title'] = $title;
-            endif;
+            }
 
             Session::push('notifications', $notice);
 

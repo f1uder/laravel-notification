@@ -75,6 +75,15 @@ Usage: `notice($message, $type, $timer, $title)`
 * `$timer` - 3000 default = 3 sec.
 * `$title` - Notification header. Default = null.
 
+## Config
+`config/notification.php`
+* `$timer` - Notification display time in seconds.
+* `$position` - Notification position.
+  * `tr` - Top right (default).
+  * `tl` - Top left.
+  * `br` - Bottom right.
+  * `bl` - Bottom left.
+
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.

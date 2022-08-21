@@ -1,6 +1,22 @@
 @layer components {
     .notification {
-        @apply fixed top-0 right-0 z-50 flex flex-col justify-end mr-2 space-y-2;
+        @apply fixed z-50 flex justify-end space-y-2;
+    }
+
+    .notification.notice-position-tr {
+        @apply top-0 right-0 mr-2 flex-col;
+    }
+
+    .notification.notice-position-tl {
+        @apply top-0 left-0 ml-2 flex-col;
+    }
+
+    .notification.notice-position-br {
+        @apply bottom-0 right-0 mr-2 mb-2 flex-col-reverse;
+    }
+
+    .notification.notice-position-bl {
+        @apply bottom-0 left-0 ml-2 mb-2 flex-col-reverse;
     }
 
     .notification .widget {

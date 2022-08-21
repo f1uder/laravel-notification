@@ -14,6 +14,11 @@ class Notification extends Component
     public int $timer = 3000;
 
     /**
+     * @var string
+     */
+    public string $position = 'tr';
+
+    /**
      * @var array
      */
     public array $notices = [];
@@ -21,6 +26,7 @@ class Notification extends Component
     public function mount()
     {
         $this->timer = config('notification.timer');
+        $this->position = config('notification.position');
 
         if (Session::has('notifications')) {
             foreach (Session::get('notifications') as $notification) {

@@ -1,4 +1,4 @@
-<div class="notification"
+<div class="notification {{ 'notice-position-' . $position }}"
      x-data="notification()"
      x-init="render()"
      @notice.window="add($event.detail)">

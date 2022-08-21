@@ -35,7 +35,7 @@
 
     /** info */
     .notification .notice-info {
-        @apply bg-[#fbeaf0] border-[#ec4899] bg-opacity-95;
+        @apply bg-[#e5f7fd] border-[#9cbedf] bg-opacity-95;
     }
 
     .notification .notice-info .title,
@@ -53,7 +53,7 @@
 
     /** success */
     .notification .notice-success {
-        @apply bg-[#fbeaf0] border-[#ec4899] bg-opacity-95;
+        @apply bg-[#d3f8c2] border-[#6ba28e] bg-opacity-95;
     }
 
     .notification .notice-success .title,

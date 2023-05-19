@@ -8,19 +8,10 @@ use Livewire\Component;
 
 class Notification extends Component
 {
-    /**
-     * @var int
-     */
     public int $timer = 3000;
 
-    /**
-     * @var string
-     */
     public string $position = 'tr';
 
-    /**
-     * @var array
-     */
     public array $notices = [];
 
     public function mount()
